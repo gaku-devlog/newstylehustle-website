@@ -1,6 +1,6 @@
 # GAKUTOのニュースタイルハッスル情報部屋
 
-📍 サイトURL：[https://gakuto-newstylehustle.com](https://gakuto-newstylehustle.com)
+📍 サイトURL：<a href="https://gakuto-newstylehustle.com" target="_blank">https://gakuto-newstylehustle.com</a>
 
 
 ## 🔍 サイト概要
