@@ -1,0 +1,352 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+#app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media screen and (min-width:1200px){
+  .navbar-brand img {
+    width:100px;
+  }
+}
+
+@media screen and (min-width:992px){
+  .navbar-nav li  {
+    line-height: 1.7;
+  }
+  .dropdown-menu a {
+    line-height: 1.9;
+  }
+  .dropdown-menu  {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width:600px){
+  .navbar {
+     margin-top:27.25px;
+     margin-bottom:12.25px;
+  }
+}
+
+@media screen and (min-width:768px){
+  .footer-up{
+    padding-top:10px;
+    padding-bottom:25px;
+  }
+}
+
+
+@media screen and (min-width:992px) and (max-width:1200px){
+  .navbar-brand img {
+    width:90px;
+  }
+}
+
+@media screen and (min-width:544px) and (max-width:992px){
+  .navbar-brand img {
+    width:90px;
+  }
+}
+
+@media screen and (max-width:544px){
+  .navbar-brand img {
+    width:70px;
+  }
+}
+
+
+@media screen and (max-width:600px){
+    .container {
+      padding:0 5%;
+    }
+    .navbar {
+       padding-left: 15px;
+       padding-right:15px;
+       margin-top:15px;
+    }
+    .navbar-nav {
+      margin-top:5px;
+    }
+}
+
+@media screen and (max-width:768px){
+  .footer-up {
+    margin-bottom: 20px;
+  }
+  .footer-section1,.footer-section2,.fooet-section3 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:992px){
+  .navbar {
+     padding-left: 30px;
+     padding-right:30px;
+  }
+  .navbar-nav {
+    margin-top:8px;
+  }
+  .dropdown-menu {
+    width:50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:992px){
+  .navbar-collapse {
+    text-align: center;
+  }
+  .form-search {
+    width:50%;
+    display: flex;
+    justify-content: center;
+  }
+  .dropdown a {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:1002px) and (max-width:1068px){
+  .search-form {
+    width:78px !important;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1002px){
+  .search-form {
+    width:56.38px !important;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1178px){
+  .search-btn {
+    margin-top: 0.5rem !important;
+  }
+}
+
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+}
+
+.container-head {
+  max-width: 1500px;
+  width: 100%;
+}
+
+//header
+.navbar-nav a{
+  padding-left: 15px;
+  padding-right: 15px;
+  color:#000;
+  font-size:1.6rem;
+  font-weight: bold;
+}
+
+
+.search-form{
+  font-size: 0.8em;
+}
+
+.btn-outline-success{
+  font-size: 0.8em;
+}
+
+
+//footer
+footer{
+margin-top: auto;
+}
+
+.footer-section{
+  margin-bottom:15px;
+}
+
+/* ボタン全体 */
+.flowbtn10{
+display:inline-block;
+font-size:35px;
+text-decoration:none;
+transition:.5s;
+color:#444;
+}
+/* インスタ・pocket・ラインだけ少し大きく */
+.flowbtn10 .fa-instagram,.flowbtn10 .fa-get-pocket,.flowbtn10 .fa-get-pocket,.flowbtn10 .fa-line{
+font-size:38px;
+}
+/* Twitterマウスホバー時 */
+.flowbtn10 .fa-twitter:hover{
+color:#55acee;
+}
+/* Instagramマウスホバー時 */
+.flowbtn10 .fa-instagram:hover{
+color:#c6529a;
+}
+/* Facebookマウスホバー時 */
+.flowbtn10 .fa-facebook-f:hover{
+color:#3b5998;
+}
+/* Feedlyマウスホバー時 */
+.flowbtn10 .fa-rss:hover{
+color:#6cc655;
+}
+/* Pocketマウスホバー時 */
+.flowbtn10 .fa-get-pocket:hover{
+color:#ef3f56;
+}
+/* はてブマウスホバー時 */
+.flowbtn10 .fa-bold:hover{
+color:#1ba5dc;
+}
+/* YouTubeマウスホバー時 */
+.flowbtn10 .fa-youtube:hover{
+color:#fc0d1c;
+}
+/* LINEマウスホバー時 */
+.flowbtn10 .fa-line:hover{
+color:#00c300;
+}
+/* メールアイコンマウスホバー時 */
+.flowbtn10 .fa-envelope:hover{
+color:#f3981d;
+}
+/* ulタグの内側余白を０にする */
+ul.snsbtniti{
+padding:0!important;
+list-style-type:none!important;
+text-align: center;
+}
+/* アイコン全体の位置 */
+.snsbtniti{
+
+}
+/* アイコン同士の余白 */
+.snsbtniti li{
+display: inline-block;
+text-align:center!important;
+padding: 0 20px;
+
+}
+
+
+.footerfbbtn{
+  padding: 0 8.475px;
+}
+
+.footer-share{
+  margin-bottom: 10px;
+}
+
+.share-button {
+  padding-top:2px;
+}
+
+.share-title p {
+  font-size: 3rem;
+  margin-bottom: -30px;
+  text-align:center;
+}
+
+
+.footer-menu {
+  position:relative;
+  overflow:hidden;
+}
+
+.footer-menu ul{
+  list-style: none;
+  display:block;
+  padding-left: 0;
+  float:left;
+　position:relative;
+　left:50%;
+}
+
+.footer-menu li{
+  margin: 0 auto;
+  position:relative;
+  left:-50%;
+}
+
+.footer-menu a{
+  color:#000;
+}
+
+
+.description-title{
+  font-weight: bold;
+}
+
+.footer-logo {
+  width: 65%;
+}
+
+.footer-section3{
+  text-align: center;
+}
+
+.copyright {
+    font-size: 80%; /*フォントサイズの指定*/
+    width: 100%;    /*横幅の指定*/
+    text-align: center; /*文字の中央寄せ*/
+    padding-top: 10px;  /*文字上部の余白指定*/
+    padding-bottom: 10px;   /*文字下部の余白指定*/
+    margin-top:10px;
+}
+footer address{
+    font-style: normal; /*文字の斜体を取り消す*/
+}
+
+.copyright p {
+   margin-bottom: 0;
+}
+
+.copyright a {
+   color: #000;
+}
+
+//戻るボタン
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 2em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  background:transparent;
+}
+
+.btn-flat-border:hover {
+  background: #67c5ff;
+  color: white;
+  text-decoration: none;
+}
+
+.page-return{
+  text-align:center;
+}
+
+.paginate{
+  margin-bottom:30px;
+}
+
+.navbar-toggler-icon {
+  width:22.5px !important;
+  height:22.5px !important;
+}
+
+.navbar-toggler {
+  padding:5px 10px !important;
+}
