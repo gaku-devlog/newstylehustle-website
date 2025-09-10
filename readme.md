@@ -1,5 +1,7 @@
 # GAKUTOのニュースタイルハッスル情報部屋
 
+![サイトトップページ](docs/images/top.png)
+
 📍 サイトURL：<a href="https://gakuto-newstylehustle.com" target="_blank">https://gakuto-newstylehustle.com</a>
 
 
