@@ -29,8 +29,8 @@
                             <tbody>
                                 @foreach($pages as $community)
                                         <tr>
-                                            <th>{{ str_limit($community->name, 100) }}</th>
-                                            <td>{{ str_limit($community->information, 100) }}</td>
+                                            <th>{{ \Illuminate\Support\Str::limit($community->name, 100) }}</th>
+                                            <td>{{ \Illuminate\Support\Str::limit($community->information, 100) }}</td>
                                             <td>
                                                 <div>
                                                     <a href="/community/{{ $community->permalink }}" target="_blank">表示</a>
@@ -112,8 +112,8 @@
                             <tbody>
                                 @foreach($posts as $news)
                                         <tr>
-                                            <th>{{ str_limit($news->news_title, 100) }}</th>
-                                            <td>{{ str_limit($news->news_body, 100) }}</td>
+                                            <th>{{ \Illuminate\Support\Str::limit($news->news_title, 100) }}</th>
+                                            <td>{{ \Illuminate\Support\Str::limit($news->news_body, 100) }}</td>
                                             <td>
                                                 <div>
                                                     <a href="/news/{{ $news->news_permalink }}" target="_blank">表示</a>

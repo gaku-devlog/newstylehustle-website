@@ -36,8 +36,8 @@
                                      <div class="search-text-container">
                                          <div class="search-text">
                                              <div class="post-title">
-                                                 <p class="title mx-auto">{{ str_limit($post->news_title, 100) }}</p>
-                                                 <p class="name mx-auto">{{ str_limit($post->pref, 100) }}</p>
+                                                 <p class="title mx-auto">{{ \Illuminate\Support\Str::limit($post->news_title, 100) }}</p>
+                                                 <p class="name mx-auto">{{ \Illuminate\Support\Str::limit($post->pref, 100) }}</p>
                                              </div>
                                              <div class="date">
                                                  <p><i class="far fa-calendar-alt"></i>{{ $post->created_at->format('Y年m月d日') }}</p>
@@ -81,7 +81,7 @@
                                         <div class="search-text-container">
                                             <div class="search-text">
                                               <div class="post-title">
-                                                  <p class="name mx-auto">{{ str_limit($page->name, 100) }}</p>
+                                                  <p class="name mx-auto">{{ \Illuminate\Support\Str::limit($page->name, 100) }}</p>
                                               </div>
                                               <div class="date">
                                                   <p><i class="far fa-calendar-alt"></i>{{ $page->created_at->format('Y年m月d日') }}</p>

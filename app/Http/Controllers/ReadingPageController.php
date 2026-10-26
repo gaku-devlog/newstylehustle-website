@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Community;
 use App\News;
 
-class ReadingPagecontroller extends Controller
+class ReadingPageController extends Controller
 {
     //
     public function communityshow(Request $request)

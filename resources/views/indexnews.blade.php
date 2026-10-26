@@ -31,13 +31,13 @@
                          <div class="search-text-container">
                              <div class="search-text">
                                  <div class="post-title">
-                                     <p>{{ str_limit($post->news_title, 100) }}</p>
+                                     <p>{{ \Illuminate\Support\Str::limit($post->news_title, 100) }}</p>
                                  </div>
                                  <div class="date">
                                      <p><i class="far fa-calendar-check"></i>{{ $post->created_at->format('Y年m月d日') }}</p>
                                  </div>
                                  <div class="post-body">
-                                    <p class="none">{{ str_limit($post->news_body, 150) }}</p>
+                                    <p class="none">{{ \Illuminate\Support\Str::limit($post->news_body, 150) }}</p>
                                  </div>
                              </div>
                          </div>

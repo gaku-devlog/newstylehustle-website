@@ -27,11 +27,35 @@ New Style Hustleとは、ストリートの要素が大きい比較的新しい�
 
 ## 🛠 技術構成
 
-- **開発フレームワーク**：Laravel 5.8  
+- **開発フレームワーク**：Laravel 13
+- **PHP**：8.4
 - **使用言語**：PHP / HTML / CSS / JavaScript  
 - **テンプレートエンジン**：Blade  
-- **ホスティング環境**：エックスサーバー（PHP 7.3）  
+- **ホスティング環境**：エックスサーバー
 - **レスポンシブ対応**：モバイル表示に配慮した設計
+
+
+## 💻 ローカルでの起動
+
+PHP 8.4、Composer、SQLite拡張が必要です。macOSでHomebrewのPHP 8.4を使う場合は、先に次のようにPATHを設定します。
+
+```bash
+export PATH="/usr/local/opt/php/bin:$PATH"
+php -v
+```
+
+その後、以下を実行します。
+
+```bash
+composer install
+cp .env.example .env
+touch database/database.sqlite
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
+
+`http://127.0.0.1:8000` を開くと、SQLiteを使ったローカル環境で確認できます。本番環境では既存のMySQL接続情報を `.env` に設定してください。
 
 
 ## ✨ 特徴・工夫点
