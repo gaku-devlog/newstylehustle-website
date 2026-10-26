@@ -1,10 +1,10 @@
 @extends('layouts.toppage')
 
 @section('title', 'GAKUTOのニュースタイルハッスル情報部屋')
-@section('metadescription', 'GAKUTOのニュースタイルハッスル情報部屋は、日本のニュースタイルハッスルの情報を紹介します。<br>ニュースタイルハッスルが日本中に広がることを願っています。')
+@section('metadescription', 'GAKUTOのニュースタイルハッスル情報部屋は、日本のニュースタイルハッスル（NEW STYLE HUSTLE）の情報を紹介します。ニュースタイルハッスルが日本中に広がることを願っています。')
 @section("ogtitle", "GAKUTOのニュースタイルハッスル情報部屋 | GAKUTO'S NEW STYLE HUSTLE INFORMATION ROOM")
 @section('ogurl'){{ url('/') }}@endsection
-@section('ogimage'){{ asset('img/newstylehustlejapanwebsite-eyecatch.png')}}@endsection
+@section('ogimage'){{ asset('img/gakuto-newstylehustle-eyecatch.png')}}@endsection
 
 @section('content')
 　　<div class="container-head mx-auto">　　
@@ -135,8 +135,9 @@
                         <div class="chubu region">
                             <h3 class="region-name">中部地方 (Chubu region)</h3>
                             <div class="chubu-list">
-                        　      <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'aichi'])}}" class="chubu-btn"><span class="pref-btn1">愛知</span><br><span class="pref-btn2">(Aichi)</span></a>
-                        　      <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'yamanashi'])}}" class="chubu-btn"><span class="pref-btn1">山梨</span><br><span class="pref-btn2">(Yamanashi)</span></a>
+                       　      <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'aichi'])}}" class="chubu-btn"><span class="pref-btn1">愛知</span><br><span class="pref-btn2">(Aichi)</span></a>
+                       　      <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'yamanashi'])}}" class="chubu-btn"><span class="pref-btn1">山梨</span><br><span class="pref-btn2">(Yamanashi)</span></a>
+                                  <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'niigata'])}}" class="chubu-btn"><span class="pref-btn1">新潟</span><br><span class="pref-btn2">(Niigata)</span></a>
                             </div>
                         </div>
                         <div class="kansai region">
@@ -160,6 +161,7 @@
                         <div class="kyushu-okinawa region">
                       　    <h3 class="region-name">九州・沖縄地方 (kyushu & Okinawa region)</h3>
                             <div class="kyushu-okinawa-list">
+　　　　　　　　　   <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'kanoya'])}}" class="kyushu-okinawa-btn"><span class="pref-btn1">鹿屋</span><br><span class="pref-btn2">(Kanoya)</span></a>
                     　　        <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'okinawa'])}}" class="kyushu-okinawa-btn"><span class="pref-btn1">沖縄</span><br><span class="pref-btn2">(Okinawa)</span></a>
                             </div>
                         </div>

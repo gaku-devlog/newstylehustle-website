@@ -9,6 +9,7 @@ use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReadingPageController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 
@@ -59,3 +60,5 @@ Route::get('contact', [ContactsController::class, 'index']);
 Route::post('contact/confirm', [ContactsController::class, 'confirm']);
 Route::post('contact/correct', [ContactsController::class, 'correct']);
 Route::post('contact/complete', [ContactsController::class, 'complete']);
+Route::get('sitemap', SitemapController::class)->name('sitemap');
+Route::get('sitemap.xml', SitemapController::class);

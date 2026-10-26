@@ -219,7 +219,7 @@
                               　<h3>芸能界でも！</h3>
                                 <p>またZabu&Eriペアは</p>
                                 <ul>
-                                  <li>フジテレビ「ミュージックステーション」KREVA ダンサー出演</li>
+                                  <li>テレビ朝日「ミュージックステーション」KREVA ダンサー出演</li>
                                   <li>NHK Eテレ「Eダンスアカデミー」ゲスト出演</li>
                                   <li>EXILE USA 主催「Dance Earth Festival 2017」出演</li>
                                   <li>嵐アルバム「Untitled」リード曲「未完」MV振り付け</li>
@@ -274,6 +274,7 @@
                                             <div class="chubu-list">
                                         　      <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'aichi'])}}" class="chubu-btn"><span class="pref-btn1">愛知</span><br><span class="pref-btn2">(Aichi)</span></a>
                                         　      <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'yamanashi'])}}" class="chubu-btn"><span class="pref-btn1">山梨</span><br><span class="pref-btn2">(Yamanashi)</span></a>
+                                               <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'niigata'])}}" class="chubu-btn"><span class="pref-btn1">新潟</span><br><span class="pref-btn2">(Niigata)</span></a>
                                             </div>
                                         </div>
                                         <div class="kansai region">
@@ -305,6 +306,7 @@
                                                 <p>九州・沖縄地方 (kyushu & Okinawa region)</p>
                                             </div>
                                             <div class="kyushu-okinawa-list">
+　　　　　　　　　　　　　　<a href="{{ action('ReadingPageController@communityshow',['permalink' => 'kanoya'])}}" class="kyushu-okinawa-btn"><span class="pref-btn1">鹿屋</span><br><span class="pref-btn2">(Kanoya)</span></a>
                                     　　        <a href="{{ action('ReadingPageController@communityshow',['permalink' => 'okinawa'])}}" class="kyushu-okinawa-btn"><span class="pref-btn1">沖縄</span><br><span class="pref-btn2">(Okinawa)</span></a>
                                             </div>
                                         </div>
